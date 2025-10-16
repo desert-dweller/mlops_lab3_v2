@@ -3,7 +3,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import precision_score, recall_score, f1_score
 import xgboost as xgb
 import mlflow
-
+from dotenv import load_dotenv
+load_dotenv()
 mlflow.xgboost.autolog()
 mlflow.set_experiment("Telco Churn Prediction")
 

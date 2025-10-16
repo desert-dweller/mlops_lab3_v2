@@ -4,7 +4,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, roc_auc_score
 import mlflow
 import joblib
-
+from dotenv import load_dotenv
+load_dotenv()
 mlflow.set_experiment("Telco Churn Prediction")
 
 df = pd.read_csv('data/preprocessed_churn.csv')
